@@ -35,7 +35,7 @@ router.get('/destinations', requireToken, (req, res, next) => {
 router.get('/destinations/:id', requireToken, (req, res, next) => {
   const destinationId = req.params.id
 
-  Destination.findById(destinationId)
+  Destination.findById(destinationId).populate('owner')
     .then(handle404)
     // if `findById` is succesful, respond with 200
     .then(destination => res.status(200).json({ destination: destination.toObject() }))

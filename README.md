@@ -1,44 +1,40 @@
-# Sample README
-TEST CONNECTION WITH NEW REMOTE REPO
-# Application Title: A Description
+# TraveL-LisT-API
 
-This application allows the user to do x, y, and z. Maybe here's a reason why I wanted to do this project, or
-came up with this idea.
+This app allows users to build their own custom destination lists to start
+planning their next big travel adventure.
 
-## Important Links
+#### Important Links
 
-- [Other Repo](www.link.com)
-- [Deployed API](www.link.com)
-- [Deployed Client](www.link.com)
+Client repo: [TraveL-LisT-Client](https://github.com/Gambinos14/TraveL-LisT-Client)
 
-## Planning Story
+#### Project Planning
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id ornare magna. Curabitur leo arcu, elementum in posuere vitae, rutrum eu urna. Quisque tincidunt nulla sed mi cursus, nec tristique est fermentum. Etiam lacinia id neque ut egestas. Sed consequat convallis felis nec posuere. Sed non eros sed velit viverra tincidunt. Etiam et tortor sit amet lacus volutpat dignissim. Vestibulum convallis, felis a posuere pretium, turpis enim sollicitudin neque, pretium finibus leo metus sed sapien. Praesent iaculis pharetra nunc ac rhoncus. Duis eu risus in est porttitor egestas sit amet eget metus. Maecenas iaculis auctor ullamcorper. Donec pretium dolor non nisl egestas bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper pulvinar orci interdum mattis. Ut gravida volutpat mauris, a semper risus maximus ut.
 
-### User Stories
 
-- As a user I want to sign in/up
-- As a user I want to Create a new < resource >
-- As a user I want to Read multiple < resources >
-- As a user I want to Read a single < resource >
-- As a user I want to Update a < resource > I own
-- As a user I want to Delete a < resource > I own
+#### User Stories
+* As a user, I want to be able to interact with only my personal bucket list.
+* As a user, I would like to be able to create an ordered list of my top bucket
+list detinations.
+* As a user, I would like that bucket list to be rendered in the same order every
+time I log in.
+* As a user, I would like to be able to change the order of the destinations in
+my bucket list.
 
-### Technologies Used
+#### Technologies Used
+* JavaScript
+* Express.js
+* MongoDB
+* Mongoose
+* Heroku
 
-- jQuery
-- HTML/CSS
-- Bootstrap
-- Javascript
+#### Future Updates
+* Add a list model with a name, an array of destination IDs and an owner
+* Add routes to CRUD a list
+* Add a comment model with a name and body
+* Add a coments array to the destination model with references to comment IDs
+* Add comment routes to create comments and delete comments
 
-### Unsolved Problems
 
-- Still need to ....
-- Would like to eventually ....
+#### Wireframe and ERD
 
-## Images
-
----
-
-#### Wireframe:
-![wireframe](https://lucidchart.zendesk.com/hc/article_attachments/360001080866/Facebook_Wireframe_-_New_Page.png)
+Wireframe and ERD [imgur link](https://imgur.com/TvBtjZ5)

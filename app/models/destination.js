@@ -31,14 +31,7 @@ const destinationSchema = new mongoose.Schema({
     required: true
   }
 }, {
-  timestamps: true,
-  toObject: {
-    transform: (_doc, destination) => {
-      delete destination.latitude
-      delete destination.longitude
-      return destination
-    }
-  }
+  timestamps: true
 })
 
 module.exports = mongoose.model('Destination', destinationSchema)

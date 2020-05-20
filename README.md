@@ -8,7 +8,21 @@ planning their next big travel adventure.
 Client repo: [TraveL-LisT-Client](https://github.com/Gambinos14/TraveL-LisT-Client)
 
 #### Project Planning
+I started by working on and testing the API authentication routes with some curl
+scripts to ensure that the API was handling user requests correctly and
+returning unique tokens to the client when a user logged in. From there, I made
+all the CRUD routes require authentication so that the user token is required to
+make any changes to the destinations collection in the MongoDB back-end. Once
+all the destination routes were completed, I tested them out with some curl
+scripts and then began creating the front-end to test the API with some AJAX
+requests.
 
+The first version of this application required just a simple back-end with two
+models the destination model and the user model. Each destination has an owner
+which references a user and a user owns many destinations which can easily be
+retrived with an easy search on the destinations collection. Future versions
+of this application could include routes for comments on a destination or routes
+for the user to build multiple named lists of destinations.
 
 
 #### User Stories
@@ -33,7 +47,6 @@ my bucket list.
 * Add a comment model with a name and body
 * Add a coments array to the destination model with references to comment IDs
 * Add comment routes to create comments and delete comments
-
 
 #### Wireframe and ERD
 
